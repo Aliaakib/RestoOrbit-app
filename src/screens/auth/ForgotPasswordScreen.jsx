@@ -79,7 +79,7 @@ export function ForgotPasswordScreen({ navigation }) {
 
             <Text style={styles.helperText}>
               Enter the email associated with your RestoOrbit account and we will send reset
-              instructions.
+              link.
             </Text>
 
             <AppInput

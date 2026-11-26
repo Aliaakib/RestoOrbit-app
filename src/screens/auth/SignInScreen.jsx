@@ -51,7 +51,6 @@ export function SignInScreen({ navigation }) {
     <ScreenContainer scrollable contentStyle={styles.container}>
       <View style={styles.logoWrap}>
         <BrandLogo variant="horizontal" width={220} height={54} />
-        <Text style={styles.brandSubtitle}>Hospitality & Daily Operations Suite</Text>
       </View>
 
       <AppCard style={styles.card}>
@@ -65,14 +64,6 @@ export function SignInScreen({ navigation }) {
           </Pressable>
         </View>
 
-        {env.isDemoApiMode ? (
-          <View style={styles.demoNotice}>
-            <Ionicons name="information-circle-outline" size={18} color={colors.info} />
-            <Text style={styles.demoNoticeText}>
-              Demo mode active. Tap Login to explore with an encrypted SecureStore session.
-            </Text>
-          </View>
-        ) : null}
 
         {formError ? (
           <View accessibilityRole="alert" style={styles.errorBanner}>
